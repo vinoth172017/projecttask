@@ -1,5 +1,8 @@
 package com.taskmanagement.stepdefinition;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 import com.taskmanagement.excelutilitty.ExelUlities;
 import com.taskmanagement.pagesobjects.LoginPage;
 
@@ -8,16 +11,20 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class LoginStep {
-	
-	LoginPage tasklogin=new LoginPage(); 		//Creating Object for login Pages	
-	ExelUlities taskexel = new ExelUlities();	 //Creating Object for Excel ulities
-
+	WebDriver driver; 
+	public LoginPage tasklogin;		//Creating Object for login Pages	
+									
 //@TC01	Login scenario methods 	
 	
 		@Given("^The user launch the Chrome application$")
 		public void the_user_launch_the_chrome_application() throws Throwable {
 			// Write code here that turns the phrase above into concrete actions
-			tasklogin.browserLaunch("chrome", "http://examples.codecharge.com/TaskManager/Default.php");
+			System.setProperty("webdriver.chrome.driver", "src//test//resources//Driver//chromedriver.exe");
+			driver = new ChromeDriver();
+			tasklogin= new LoginPage(driver);
+			driver.get("http://examples.codecharge.com/TaskManager/Default.php");
+			driver.manage().window().maximize();
+			//tasklogin.browserLaunch("chrome", "http://examples.codecharge.com/TaskManager/Default.php");
 		}
 
 		@When("^Clicking on administration to nagivate Login Page$")
@@ -26,22 +33,15 @@ public class LoginStep {
 			tasklogin.loginPage();
 		}
 
-		@Then("^The user login using username and password with vaild and invaild deatils$")
-		public void the_user_login_using_username_and_password() throws Throwable {
-		    // Write code here that turns the phrase above into concrete actions
-			tasklogin.loginDetails(taskexel.Task_Management_username(1),taskexel.Task_Management_password(1));
-			tasklogin.loginClick();
-			    int count=taskexel.row_count();
-			    for(int i=2;i<=count;i++)
-			    {
-			    	tasklogin.browserLaunch("chrome", "http://examples.codecharge.com/TaskManager/Default.php");
-			    	tasklogin.loginPage();
-			    	tasklogin.loginDetails(taskexel.Task_Management_username(i),taskexel.Task_Management_password(i));
-			    if (i==2) {
-			    	tasklogin.loginClick();
-			    }
-			    }
+		
+		@Then("^The user login using \"([^\"]*)\" and \"([^\"]*)\" with vaild and invaild deatils$")
+		public void the_user_login_using_and_with_vaild_and_invaild_deatils(String username, String password) throws Throwable {
+		    // Write code here that turns the phrase above into concrete actions	
+			tasklogin.loginDetails(username,password);
+			Thread.sleep(4000);
+			
 		}
+		
 		@Then("^Clicking on login button$")
 		public void click_on_login_Button() throws Throwable {
 		    // Write code here that turns the phrase above into concrete actions

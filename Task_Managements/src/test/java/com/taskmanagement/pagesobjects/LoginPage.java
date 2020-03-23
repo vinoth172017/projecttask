@@ -18,6 +18,10 @@ public class LoginPage {
 	By Password=By.name("password");
 	By Loginclick=By.name("DoLogin");
 	
+	public LoginPage(WebDriver driver) {
+		this.driver=driver;
+		// TODO Auto-generated constructor stub
+	}
 	public void browserLaunch(String browser,String url)//
 	{
 		try {
@@ -53,10 +57,10 @@ public class LoginPage {
 		
 	}
 	
-	public void loginDetails(String login, String Pass) throws IOException 
+	public void loginDetails(String username, String password) throws IOException 
 	{
-		driver.findElement(Login).sendKeys(login);
-		driver.findElement(Password).sendKeys(Pass);
+		driver.findElement(Login).sendKeys(username);
+		driver.findElement(Password).sendKeys(password);
 		driver.findElement(Loginclick).click();
 	}
 	

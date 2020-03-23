@@ -2,12 +2,18 @@
 Feature: Task_Management Website
 
 @TC_01_Login
-Scenario:
+Scenario Outline:
 	Login into Task_Mangement Website
 Given The user launch the Chrome application
 When Clicking on administration to nagivate Login Page
-Then The user login using username and password with vaild and invaild deatils
+Then The user login using "<username>" and "<password>" with vaild and invaild deatils
 Then Clicking on login button
+
+Examples: 
+|username	|password	|
+|vinoth		|vinoth		|
+|sanjeev	|sanjeev	|
+|admin		|admin		|
 
 @TC_02_Add_Task
 Scenario:
