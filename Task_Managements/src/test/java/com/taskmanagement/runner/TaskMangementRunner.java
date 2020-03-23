@@ -16,7 +16,6 @@ plugin = {"pretty", "html:reports/cucumber-html-report","json:reports/cucumber-h
 //plugin = {"com.cucumber.listener.ExtentCucumberFormatter:output/report.html"},
 
 tags= {"@TC_01_Login,@TC_02_Add_Task,@TC_03_Search_Task,@TC_04_Task_Table_Printing"},
-//
 glue = {"com.taskmanagement.stepdefinition"},
 monochrome = true
 )

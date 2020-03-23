@@ -10,6 +10,7 @@ Then The user login using "<username>" and "<password>" with vaild and invaild d
 Then Clicking on login button
 
 Examples: 
+
 |username	|password	|
 |vinoth		|vinoth		|
 |sanjeev	|sanjeev	|

@@ -39,7 +39,6 @@ public class LoginStep {
 		    // Write code here that turns the phrase above into concrete actions	
 			tasklogin.loginDetails(username,password);
 			Thread.sleep(4000);
-			
 		}
 		
 		@Then("^Clicking on login button$")
