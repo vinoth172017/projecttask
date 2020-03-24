@@ -7,14 +7,14 @@ Scenario Outline:
 Given The user launch the Chrome application
 When Clicking on administration to nagivate Login Page
 Then The user login using "<username>" and "<password>" with vaild and invaild deatils
-Then Clicking on login button
+Then Clicking on login button "<message>"
 
 Examples: 
 
-|username	|password	|
-|vinoth		|vinoth		|
-|sanjeev	|sanjeev	|
-|admin		|admin		|
+|username	|password	| message 		|
+|vinoth		|vinoth		|invalid login	|
+|sanjeev	|sanjeev	|invalid login	|
+|admin		|admin		|valid login	|
 
 @TC_02_Add_Task
 Scenario:

@@ -47,7 +47,7 @@ public class TaskTablePage {
 	{
 		List <WebElement> row=driver.findElements(Rows);		//storing the row in webelement using list
 		System.out.println("col "+row.size());
-		System.out.println("Printing the Task details in the consloe "+row.size()); // size of the row
+		System.out.println("Printing the Task web table details in the consloe total row printing "+row.size()); // size of the row
 		for (int i =1;i<row.size();i++)
 		{	
 				String a= driver.findElement(By.xpath("/html/body/table[3]/tbody/tr/td/table[2]/tbody/tr[" + (i+1)+ "]")).getText();

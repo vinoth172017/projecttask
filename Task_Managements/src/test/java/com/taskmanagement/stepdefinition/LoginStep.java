@@ -12,19 +12,14 @@ import cucumber.api.java.en.When;
 
 public class LoginStep {
 	WebDriver driver; 
-	public LoginPage tasklogin;		//Creating Object for login Pages	
+	public LoginPage tasklogin= new LoginPage(driver);
+	//Creating Object for login Pages	
 									
 //@TC01	Login scenario methods 	
 	
 		@Given("^The user launch the Chrome application$")
 		public void the_user_launch_the_chrome_application() throws Throwable {
-			// Write code here that turns the phrase above into concrete actions
-			System.setProperty("webdriver.chrome.driver", "src//test//resources//Driver//chromedriver.exe");
-			driver = new ChromeDriver();
-			tasklogin= new LoginPage(driver);
-			driver.get("http://examples.codecharge.com/TaskManager/Default.php");
-			driver.manage().window().maximize();
-			//tasklogin.browserLaunch("chrome", "http://examples.codecharge.com/TaskManager/Default.php");
+			tasklogin.browserLaunch("chrome", "http://examples.codecharge.com/TaskManager/Default.php");
 		}
 
 		@When("^Clicking on administration to nagivate Login Page$")
@@ -33,7 +28,6 @@ public class LoginStep {
 			tasklogin.loginPage();
 		}
 
-		
 		@Then("^The user login using \"([^\"]*)\" and \"([^\"]*)\" with vaild and invaild deatils$")
 		public void the_user_login_using_and_with_vaild_and_invaild_deatils(String username, String password) throws Throwable {
 		    // Write code here that turns the phrase above into concrete actions	
@@ -41,10 +35,12 @@ public class LoginStep {
 			Thread.sleep(4000);
 		}
 		
-		@Then("^Clicking on login button$")
-		public void click_on_login_Button() throws Throwable {
+		@Then("^Clicking on login button \"([^\"]*)\"$")
+		public void click_on_login_Button(String message) throws Throwable {
+			
 		    // Write code here that turns the phrase above into concrete actions
-			tasklogin.loginClick();
+			tasklogin.loginClick(message);
+			
 		}
 
 }

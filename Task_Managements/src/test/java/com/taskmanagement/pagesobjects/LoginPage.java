@@ -63,8 +63,9 @@ public class LoginPage {
 		driver.findElement(Loginclick).click();
 	}
 	
-	public void loginClick()		//getting login and closing the browser
+	public void loginClick(String message)		//getting login and closing the browser
 	{
+		System.out.println(message);
 		driver.close();
 	}
 }
