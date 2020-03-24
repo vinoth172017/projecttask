@@ -9,24 +9,17 @@
 <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 </properties>
 <dependencies>
-
 <!--StartReport -->
 <dependency>
 <groupId>com.aventstack</groupId>
 <artifactId>extentreports</artifactId>
-<version>3.0.7</version>
+<version>4.0.8</version>
 <scope>provided</scope>
 </dependency>
 <dependency>
 <groupId>com.vimalselvam</groupId>
 <artifactId>cucumber-extentsreport</artifactId>
-<version>3.0.1</version>
-</dependency>
-<dependency>
-<groupId>org.apache.maven.plugins</groupId>
-<artifactId>maven-compiler-plugin</artifactId>
-<version>3.6.1</version>
-<type>maven-plugin</type>
+<version>3.0.2</version>
 </dependency>
 <!--EndReport -->
 
@@ -59,7 +52,6 @@
     <version>3.9</version>
 </dependency>
 <!--EndDependency -->
-
 <!--Cucumber ReportStart  -->
 <dependency>
     <groupId>net.masterthought</groupId>
