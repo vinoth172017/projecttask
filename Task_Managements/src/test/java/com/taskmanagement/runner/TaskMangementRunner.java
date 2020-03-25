@@ -18,9 +18,12 @@ public class TaskMangementRunner  {
 	@AfterClass
   public static void extendReport() {
       Reporter.loadXMLConfig("src/test/resources/extent-config.xml");
-      Reporter.setSystemInfo("user", System.getProperty("user.name"));
-      Reporter.setSystemInfo("os", "Windows");
-      Reporter.setTestRunnerOutput("Sample test runner output message");
+      Reporter.setSystemInfo("User Name", System.getProperty("user.name"));
+      Reporter.setSystemInfo("Time Zone", System.getProperty("user.timezone"));
+      Reporter.setSystemInfo("Machine", "Windows 10" + "64 Bit");
+      Reporter.setSystemInfo("Selenium", "3.141.59");
+      Reporter.setSystemInfo("Maven", "4.0.0");
+      Reporter.setSystemInfo("Java Version", "1.8.0_131");
 }
 }
 	

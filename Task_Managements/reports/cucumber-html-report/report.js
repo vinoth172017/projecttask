@@ -140,14 +140,14 @@ formatter.match({
   "location": "LoginStep.the_user_launch_the_chrome_application()"
 });
 formatter.result({
-  "duration": 9598502000,
+  "duration": 7357000101,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.clicking_on_Administration_to_nagivate_Login_Page()"
 });
 formatter.result({
-  "duration": 1447577300,
+  "duration": 1885861400,
   "status": "passed"
 });
 formatter.match({
@@ -164,7 +164,7 @@ formatter.match({
   "location": "LoginStep.the_user_login_using_and_with_vaild_and_invaild_deatils(String,String)"
 });
 formatter.result({
-  "duration": 5421828200,
+  "duration": 5460039199,
   "status": "passed"
 });
 formatter.match({
@@ -177,7 +177,7 @@ formatter.match({
   "location": "LoginStep.click_on_login_Button(String)"
 });
 formatter.result({
-  "duration": 4150843800,
+  "duration": 304410800,
   "status": "passed"
 });
 formatter.scenario({
@@ -229,14 +229,14 @@ formatter.match({
   "location": "LoginStep.the_user_launch_the_chrome_application()"
 });
 formatter.result({
-  "duration": 7814626100,
+  "duration": 4192495500,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.clicking_on_Administration_to_nagivate_Login_Page()"
 });
 formatter.result({
-  "duration": 2250409800,
+  "duration": 6706772800,
   "status": "passed"
 });
 formatter.match({
@@ -253,7 +253,7 @@ formatter.match({
   "location": "LoginStep.the_user_login_using_and_with_vaild_and_invaild_deatils(String,String)"
 });
 formatter.result({
-  "duration": 5617708100,
+  "duration": 5613467299,
   "status": "passed"
 });
 formatter.match({
@@ -266,7 +266,7 @@ formatter.match({
   "location": "LoginStep.click_on_login_Button(String)"
 });
 formatter.result({
-  "duration": 4139426400,
+  "duration": 208028400,
   "status": "passed"
 });
 formatter.scenario({
@@ -318,14 +318,14 @@ formatter.match({
   "location": "LoginStep.the_user_launch_the_chrome_application()"
 });
 formatter.result({
-  "duration": 6853308200,
+  "duration": 4705723000,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.clicking_on_Administration_to_nagivate_Login_Page()"
 });
 formatter.result({
-  "duration": 1651112600,
+  "duration": 1417547500,
   "status": "passed"
 });
 formatter.match({
@@ -342,7 +342,7 @@ formatter.match({
   "location": "LoginStep.the_user_login_using_and_with_vaild_and_invaild_deatils(String,String)"
 });
 formatter.result({
-  "duration": 5649042300,
+  "duration": 5523068400,
   "status": "passed"
 });
 formatter.match({
@@ -355,7 +355,7 @@ formatter.match({
   "location": "LoginStep.click_on_login_Button(String)"
 });
 formatter.result({
-  "duration": 414285300,
+  "duration": 4117238101,
   "status": "passed"
 });
 formatter.scenario({
@@ -396,28 +396,28 @@ formatter.match({
   "location": "AddTaskStep.the_user_launch_chrome_addtask()"
 });
 formatter.result({
-  "duration": 6427511300,
+  "duration": 6162546900,
   "status": "passed"
 });
 formatter.match({
   "location": "AddTaskStep.click_AddTask_and_login()"
 });
 formatter.result({
-  "duration": 10171695000,
+  "duration": 8981296500,
   "status": "passed"
 });
 formatter.match({
   "location": "AddTaskStep.clicking_on_AddTask_to_nagivate_Add_Task_Page()"
 });
 formatter.result({
-  "duration": 7556984200,
+  "duration": 7063003800,
   "status": "passed"
 });
 formatter.match({
   "location": "AddTaskStep.click_on_Addbutton_to_add_Task()"
 });
 formatter.result({
-  "duration": 4934002500,
+  "duration": 4264259200,
   "status": "passed"
 });
 formatter.scenario({
@@ -453,21 +453,21 @@ formatter.match({
   "location": "SearchStep.the_user_launch_chrome_sear()"
 });
 formatter.result({
-  "duration": 6682998800,
+  "duration": 5671335900,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchStep.enter_Correct_Details_to_search()"
 });
 formatter.result({
-  "duration": 696795000,
+  "duration": 544701600,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchStep.click_Search_Button_to_Get_Details()"
 });
 formatter.result({
-  "duration": 8426088200,
+  "duration": 8785967300,
   "status": "passed"
 });
 formatter.scenario({
@@ -503,21 +503,21 @@ formatter.match({
   "location": "TaskTableStep.the_user_launch_chrome_taskt()"
 });
 formatter.result({
-  "duration": 4256105500,
+  "duration": 7256269400,
   "status": "passed"
 });
 formatter.match({
   "location": "TaskTableStep.Open_the_home_page()"
 });
 formatter.result({
-  "duration": 3726268000,
+  "duration": 3928066000,
   "status": "passed"
 });
 formatter.match({
   "location": "TaskTableStep.print_the_home_page_Task_Table_in_the_console()"
 });
 formatter.result({
-  "duration": 262905200,
+  "duration": 4357789099,
   "status": "passed"
 });
 });
