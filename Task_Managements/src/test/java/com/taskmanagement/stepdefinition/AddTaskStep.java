@@ -37,6 +37,7 @@ public class AddTaskStep {
 	public void click_on_Addbutton_to_add_Task() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		taskadd.addTask();
+		taskadd.screenshot("src/test/resources/Screenshot/Addtask.png");
 	}
 	
 

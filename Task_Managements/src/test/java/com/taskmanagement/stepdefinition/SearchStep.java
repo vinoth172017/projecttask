@@ -26,6 +26,7 @@ public class SearchStep {
 		public void click_Search_Button_to_Get_Details() throws Throwable {
 		    // Write code here that turns the phrase above into concrete actions
 			tasksearch.search();
+			tasksearch.screenshot("src/test/resources/Screenshot/search.png");
 		}
 
 }

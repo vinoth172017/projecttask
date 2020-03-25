@@ -40,6 +40,7 @@ public class LoginStep {
 			
 		    // Write code here that turns the phrase above into concrete actions
 			tasklogin.loginClick(message);
+			tasklogin.screenshot("src/test/resources/Screenshot/login.png");
 			
 		}
 

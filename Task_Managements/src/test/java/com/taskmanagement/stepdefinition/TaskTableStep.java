@@ -24,7 +24,7 @@ public class TaskTableStep {
 		@Then("^In task web table get the first row in the console$")
 		public void print_the_home_page_Task_Table_in_the_console() throws Throwable {
 		    // Write code here that turns the phrase above into concrete actions	
-			taskprint.exit();
+			taskprint.screenshot("src/test/resources/Screenshot/tabletask.png");
 		}
 
 }
